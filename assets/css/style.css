@@ -82,7 +82,7 @@ h5,
 h6 {
   color: #000024;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
+  font-family: "BahijBold";
 }
 
 .d-table {
@@ -98,6 +98,7 @@ p {
   font-size: 16px;
   margin-bottom: 15px;
   line-height: 1.8;
+  text-align: justify;
 }
 
 p:last-child {
@@ -1025,6 +1026,7 @@ Banner Area Style
 .banner-area.banner-area-two .banner-content p {
   color: #ffffff;
   font-size: 21px;
+  text-align: center;
 }
 
 .banner-area.banner-area-three {
@@ -1278,7 +1280,8 @@ About Area Style
 .about-content ul {
   padding: 0;
   list-style-type: none;
-  line-height: 1;
+  text-align: justify;
+  line-height: 29px;
 }
 
 .about-content ul li {
@@ -1390,7 +1393,7 @@ Services Area Style
 }
 
 .choose-us-area {
-  background: url(../img/aman-img/preview.gif) no-repeat center left;
+  /* background: url(../img/aman-img/preview.gif) no-repeat center left; */
 }
 
 .choose-us-area-three .single-choose-us-box {
@@ -1559,6 +1562,7 @@ Counter Area Style
 .single-counter p {
   color: var(--mainColor);
   font-size: 18px;
+  text-align: center;
 }
 
 .single-counter:hover {
@@ -1741,6 +1745,20 @@ Shipment Area Style
   color: var(--mainColor);
 }
 
+.default-btn0m {
+  margin-left: 0px;
+  background-color: transparent;
+  border: 1px solid var(--mainColor);
+  color: var(--mainColor);
+  padding: 15px 40px;
+}
+
+.default-btn0m:hover {
+  background-color: var(--mainColor);
+  color: #ffffff;
+  border-color: var(--lightColor);
+}
+
 .shipment-content .shipment-btn .default-btn.active::before {
   opacity: 0;
 }
@@ -1759,10 +1777,8 @@ Shipment Area Style
 
 .shipment-content .shipment-btn .default-btn.active:hover {
   background-color: var(--lightColor);
-  ;
   color: #ffffff;
   border-color: var(--lightColor);
-  ;
 }
 
 .shipment-content .shipment-btn .default-btn.active:hover::before {
@@ -1818,6 +1834,7 @@ Testimonials Area Style
 
 .single-testimonials p {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .single-testimonials h4 {
@@ -2186,7 +2203,6 @@ Footer Top Area Style
 }
 
 .single-footer-widget .address .location {
-  padding-left: 40px;
   position: relative;
   color: #fff;
 }
@@ -3021,6 +3037,10 @@ Privacy Policy Area Style
 
 .privacy-policy .title h2 {
   font-size: 36px;
+}
+
+.portfolio p {
+  color: var(--mainColor);
 }
 
 .privacy-policy .privacy-content {
@@ -5785,10 +5805,9 @@ Preloader Area Style*/
 .lodering {
   position: absolute;
   margin: auto;
-  text-align: center;
-  justify-content: center;
   top: 50%;
-  left: 45%;
+  left: 25%;
+  right: 25%;
 }
 
 .preloader.preloader-deactivate {
@@ -5848,7 +5867,7 @@ Preloader Area Style*/
 Go Top Style*/
 .go-top {
   position: fixed;
-  cursor: pointer;
+  cursor: default;
   top: 82%;
   right: -10%;
   background-color: var(--mainColor);
@@ -5877,13 +5896,13 @@ Go Top Style*/
   font-size: 20px;
 }
 
-.go-top i:last-child {
+/* .go-top i:last-child {
   opacity: 0;
   visibility: hidden;
   top: 60%;
-}
+} */
 
-.go-top::before {
+/* .go-top::before {
   content: '';
   position: absolute;
   top: 0;
@@ -5896,54 +5915,9 @@ Go Top Style*/
   visibility: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-.go-top:hover {
-  color: #ffffff;
-  background-color: var(--mainColor);
-}
-
-.go-top:hover::before {
-  opacity: 1;
-  visibility: visible;
-}
-
-.go-top:hover i:first-child {
-  opacity: 0;
-  top: 0;
-  visibility: hidden;
-}
-
-.go-top:hover i:last-child {
-  opacity: 1;
-  visibility: visible;
-  top: 50%;
-}
-
-.go-top:focus {
-  color: #ffffff;
-}
-
-.go-top:focus::before {
-  opacity: 1;
-  visibility: visible;
-}
-
-.go-top:focus i:first-child {
-  opacity: 0;
-  top: 0;
-  visibility: hidden;
-}
-
-.go-top:focus i:last-child {
-  opacity: 1;
-  visibility: visible;
-  top: 50%;
-}
+} */
 
 .go-top.active {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
   opacity: 1;
   visibility: visible;
   right: 3%;
@@ -6692,4 +6666,8 @@ h2 {
 
 .privacy-policy ol li::marker {
   color: var(--mainColor);
+}
+
+.services-center {
+  justify-content: center;
 }

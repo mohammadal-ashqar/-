@@ -94,7 +94,8 @@ body {
 
 .about-img .experience {
   right: unset;
-  left: -130px;
+  left: -136px;
+  bottom: 166px;
 }
 
 .nice-select {
@@ -575,7 +576,9 @@ body {
 
 @media only screen and (max-width: 767px) {
   .about-img .experience {
-    left: -81px;
+    left: -102px;
+    bottom: 102px;
+    position: absolute;
   }
 
   .top-header .header-right-content {
@@ -608,7 +611,8 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-img .experience {
-    left: -81px;
+    left: -102px;
+    bottom: 102px;
   }
 
   .top-header .header-right-content {

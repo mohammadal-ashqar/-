@@ -1,8 +1,10 @@
-/*
-MeanMenu 2.0.7
---------
-To be used with jquery.meanmenu.js by Chris Wharton (http://www.meanthemes.com/plugins/meanmenu/)
-*/
+:root {
+    --mainColor: #e7500fe9;
+    --balckColor: #000;
+    --mainText: #3c3c3b;
+    --lightColor: #3c3c3b2e;
+}
+
 a.meanmenu-reveal {
     display: none
 }
@@ -46,7 +48,7 @@ a.meanmenu-reveal {
 .mean-container .mean-nav {
     float: left;
     width: 100%;
-    background: #fff;
+    background: #000000b3;
     margin-top: 62px
 }
 
@@ -75,8 +77,8 @@ a.meanmenu-reveal {
     padding: 1em 5% 13px;
     margin: 0;
     text-align: left;
-    color: #677294;
-    border-top: 1px solid #DBEEFD;
+    color: #fff;
+    border-top: 1px solid #eee;
     text-decoration: none
 }
 
@@ -87,8 +89,8 @@ a.meanmenu-reveal {
 .mean-container .mean-nav ul li li a {
     width: 80%;
     padding: 1em 10% 13px;
-    color: #677294;
-    border-top: 1px solid #DBEEFD;
+    color: #fff;
+    border-top: 1px solid #eee;
     opacity: 1;
     filter: alpha(opacity=75);
     text-shadow: none !important;
@@ -133,7 +135,8 @@ a.meanmenu-reveal {
     z-index: 2;
     font-weight: 500;
     background: transparent;
-    border: none !important
+    border: none !important;
+    color: #e7500fe9;
 }
 
 .mean-container .mean-push {
@@ -159,4 +162,9 @@ a.meanmenu-reveal {
 
 .mean-remove {
     display: none !important
+}
+
+.style-dropdown {
+    background-color: #000000b3;
+    color: #fff;
 }

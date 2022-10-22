@@ -1,3 +1,10 @@
+:root {
+  --mainColor: #e7500fe9;
+  --balckColor: #000;
+  --mainText: #3c3c3b;
+  --lightColor: #3c3c3b2e;
+}
+
 /* Max width 767px */
 @media only screen and (max-width: 767px) {
   .ptb-100 {
@@ -90,7 +97,7 @@
   }
 
   .banner-content h1 {
-    font-size: 25px;
+    font-size: 45px !important;
     margin-bottom: 20px;
   }
 
@@ -1265,7 +1272,7 @@
   }
 
   .about-img.about-img-two {
-    background-image: url(../../assets/img/about-img-2.png);
+    background-image: url(../../assets/img/aman-img/pexels-matthis-2326876.jpg);
   }
 
   .about-img.about-img-three {
@@ -1421,7 +1428,7 @@ Continuer Custom Width Area Style*/
   }
 
   .mobile-nav .mobile-menu.mean-container .mean-nav ul li a.active {
-    color: #0383ff;
+    color: var(--mainColor);
   }
 
   .mobile-nav .mobile-menu.mean-container .mean-nav ul li li a {
