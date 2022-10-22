@@ -6671,3 +6671,19 @@ h2 {
 .services-center {
   justify-content: center;
 }
+
+.partner-item {
+  width: 170px;
+  height: 70px;
+}
+
+.partner-item a {
+  height: 100%;
+  width: 100%;
+}
+
+.partner-area .owl-carousel .owl-item img {
+  width: 100%;
+  margin: auto;
+  height: 100%;
+}
