@@ -869,6 +869,11 @@ Nav Area Style
   top: 0;
 }
 
+.navbar-area .desktop-nav .navbar .others-option .get-quote i {
+  color: #fff;
+  font-size: 28px;
+}
+
 .navbar-area.is-sticky {
   position: fixed;
   top: 0;
@@ -1289,6 +1294,7 @@ About Area Style
   margin-bottom: 25px;
   position: relative;
   padding-left: 30px;
+  text-align: justify;
 }
 
 .about-content ul li i {
@@ -1301,7 +1307,6 @@ About Area Style
   line-height: 20px;
   border-radius: 50%;
   background-color: var(--lightColor);
-  ;
   text-align: center;
   color: #ffffff;
 }
@@ -1525,6 +1530,10 @@ Choose Area Style
 
 .choose-us-img {
   margin-bottom: 30px;
+}
+
+.choose-us-content ul {
+  text-align: justify;
 }
 
 /*
@@ -2362,22 +2371,30 @@ Team Area Style
 
 
 .single-team-member .user-image {
-  width: 50px;
-  height: 52px;
+  width: 80px;
+  height: 80px;
   background-color: #fff;
   position: absolute;
   z-index: 1;
   border-radius: 45px;
   top: -39px;
-  font-size: 50px;
+  font-size: 80px;
   color: var(--mainColor);
   text-align: center;
 }
 
+
+.user-image img {
+  border-radius: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
 .single-team-member .user-image i {
-  position: ABSOLUTE;
-  left: 1px;
-  top: -11px;
+  position: absolute;
+  left: 0px;
+  top: -19px;
 }
 
 .single-team-member .team-content {
@@ -2390,6 +2407,8 @@ Team Area Style
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   margin-top: -30px;
+  /* width: 386px; */
+  height: 220px;
 }
 
 .single-team-member .team-content span {
@@ -5665,11 +5684,18 @@ Main Contact Area Style
   display: none;
 }
 
+.map-area {
+  display: flex;
+  flex-direction: row;
+}
+
 .map-area iframe {
   height: 480px;
-  width: 100%;
+  width: 90%;
   border: none !important;
   display: block;
+  border-right: 1px solid var(--mainColor);
+  margin: auto;
 }
 
 .single-contact-info {
@@ -6393,10 +6419,6 @@ Tabs Area Style*/
   justify-content: center;
 }
 
-.tracking-form .row input {
-  border-radius: 10px;
-}
-
 .default-btn {
   margin-left: 30px;
   background-color: transparent;
@@ -6523,6 +6545,7 @@ Tabs Area Style*/
 #portfolio .portfolio-item {
   margin-bottom: 30px;
   overflow: hidden;
+  position: relative;
 }
 
 #portfolio .portfolio-item img {
@@ -6544,7 +6567,7 @@ Tabs Area Style*/
   bottom: -50px;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: #2dc997;
+  background: var(--mainColor);
   padding: 15px 20px;
 }
 
@@ -6686,4 +6709,29 @@ h2 {
   width: 100%;
   margin: auto;
   height: 100%;
+}
+
+ol {
+  counter-reset: items;
+}
+
+.listin-style {
+  display: block;
+  counter-increment: items;
+  line-height: 2;
+  text-align: justify;
+  padding: 1% 0%;
+}
+
+.listin-style:before {
+  content: "0" counter(items)". ";
+  color: var(--mainColor);
+}
+
+.listin-style:nth-child(n+10):before {
+  content: "" counter(items)". ";
+}
+
+.listin-style:nth-child(n+100):before {
+  content: counter(items)". ";
 }

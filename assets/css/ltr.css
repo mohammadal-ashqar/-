@@ -1,0 +1,110 @@
+.navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
+    text-align: left;
+}
+
+.about-content .top-title,
+.choose-us-content .top-title {
+    text-align: left;
+}
+
+.about-content h2,
+.choose-us-content h2 {
+    text-align: left;
+}
+
+
+.about-content ul li i {
+    left: 0;
+}
+
+.about-content ul li {
+    padding-left: 0;
+    padding-left: 30px;
+}
+
+
+.choose-us-content {
+    text-align: start;
+}
+
+.single-blog-post .blog-content {
+    text-align: start;
+}
+
+.default-btn {
+    margin-left: 0;
+}
+
+#portfolio .title h2 {
+    text-align: start;
+}
+
+.single-team-member .team-content {
+    text-align: start;
+}
+
+.single-team-member .team-content span {
+    text-align: start;
+}
+
+.privacy-policy title p {
+    text-align: start;
+}
+
+.privacy-policy-area .privacy-policy h2 {
+    text-align: start;
+}
+
+
+.single-footer-widget {
+    margin-bottom: 30px;
+    text-align: start;
+}
+
+.single-footer-widget h3::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50% !important;
+    height: 1px;
+    background-color: rgb(209, 209, 209);
+}
+
+.single-footer-widget .import-link li::before {
+    /* left: unset; */
+    left: 0;
+}
+
+.single-footer-widget .import-link li a {
+    color: #fff;
+    padding-left: 8%;
+}
+
+.single-footer-widget .address li i {
+    left: unset;
+    left: 0;
+}
+
+.single-footer-widget .address .location {
+    position: relative;
+    color: #fff;
+    padding-left: 10%;
+}
+
+.single-footer-widget .address li a {
+    display: block;
+    color: #fff;
+}
+
+.page-title-area .page-title-content ul li::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -3px;
+    background-color: var(--mainColor);
+    width: 1px;
+    height: 15px;
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+}
