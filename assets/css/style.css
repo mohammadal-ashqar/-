@@ -6721,6 +6721,7 @@ ol {
   line-height: 2;
   text-align: justify;
   padding: 1% 0%;
+  text-transform: inherit;
 }
 
 .listin-style:before {
